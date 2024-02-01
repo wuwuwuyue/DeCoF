@@ -14,6 +14,7 @@ video generation models and confirm its powerful generalization capabilities acr
 <p align="center">
 <img src="pic/picture1.svg" width=60%>
 </p>
+
 ## Overview
 - [GeneratedVideoForensics (GVF) dataset.](#gvf)
 - [DeCoF](decof)
