@@ -7,12 +7,12 @@ our study explores the significance of temporal and spatial artifacts in develop
 (DeCoF) that eliminates the impact of spatial artifacts during generalizing feature learning. Our extensive experiments demonstrate the efficacy of DeCoF in detecting videos produced by unseen
 video generation models and confirm its powerful generalization capabilities across several commercial proprietary models.
 > <p align="center">
-<img src="pic/figure1.svg" width=60%>
+<img src="pic/figure1.svg" width=100%>
 </p>
 
 ## DIRE pipeline
 <p align="center">
-<img src="/pic/figure1.svg" width=60%>
+<img src="/pic/model-1.svg" width=60%>
 </p>
 
 ## Overview
