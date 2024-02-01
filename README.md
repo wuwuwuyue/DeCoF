@@ -6,6 +6,14 @@
 our study explores the significance of temporal and spatial artifacts in developing general and robust detectors for generated video. Based on the principle of video frame consistency, we introduce a simple yet effective detection model
 (DeCoF) that eliminates the impact of spatial artifacts during generalizing feature learning. Our extensive experiments demonstrate the efficacy of DeCoF in detecting videos produced by unseen
 video generation models and confirm its powerful generalization capabilities across several commercial proprietary models.
+> <p align="center">
+<img src="figs/teaser.png" width=60%>
+</p>
+
+## DIRE pipeline
+<p align="center">
+<img src="figs/picture1.svg" width=60%>
+</p>
 ## Overview
 - [GeneratedVideoForensics (GVF) dataset.](#gvf)
 - [DeCoF](decof)
