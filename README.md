@@ -12,7 +12,7 @@ video generation models and confirm its powerful generalization capabilities acr
 
 ## DIRE pipeline
 <p align="center">
-<img src="figs/picture1.svg" width=60%>
+<img src="pic/picture1.svg" width=60%>
 </p>
 ## Overview
 - [GeneratedVideoForensics (GVF) dataset.](#gvf)
