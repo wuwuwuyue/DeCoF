@@ -13,7 +13,7 @@
 - [DeCoF](decof)
 ## <span id="gvf"> GeneratedVideoForensics (GVF) dataset. </span>
 <p align="center">
-<img src="/pic/data_distribution.svg" width=100%>
+<img src="/pic/data_distribution.svg" width=60%>
 </p>
 
 ## <span id="decof"> DeCoF. </span>
