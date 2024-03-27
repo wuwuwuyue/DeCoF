@@ -9,8 +9,8 @@
 </p>
 
 ## Overview
-- [GeneratedVideoForensics (GVF) dataset.]
-- [DeCoF.]
+- **[GeneratedVideoForensics (GVF) dataset.]**
+- **[DeCoF.]**
 ## GeneratedVideoForensics (GVF) dataset.
 
 <p align="center">
