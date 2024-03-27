@@ -9,15 +9,15 @@
 </p>
 
 ## Overview
-- [GeneratedVideoForensics (GVF) dataset.](#gvf)
-- [DeCoF](decof)
-## <span id="gvf"> GeneratedVideoForensics (GVF) dataset. </span>
+- [GeneratedVideoForensics (GVF) dataset.]
+- [DeCoF.]
+## GeneratedVideoForensics (GVF) dataset.
 
 <p align="center">
 <img src="/pic/data_distribution.svg" width=60%>
 </p>
 
-## <span id="decof"> DeCoF. </span>
+## DeCoF.
 
 <p align="center">
 <img src="/pic/model-1.svg" width=100%>
