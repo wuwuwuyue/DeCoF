@@ -23,5 +23,5 @@ Second, we found via probing experiments that spatial artifact-based detectors l
 ## DeCoF.
 
 <p align="center">
-<img src="/pics/model-1_1.png" width=100%>
+<img src="/pics/model-1_1.png" width=60%>
 </p>
