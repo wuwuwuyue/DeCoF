@@ -17,7 +17,7 @@ Second, we found via probing experiments that spatial artifact-based detectors l
 ## GeneratedVideoForensics (GVF) dataset.
 
 <p align="center">
-<img src="/pics/data_distribution.png" width=40%>
+<img src="/pics/data_distribution.png" width=50%>
 </p>
 
 ## DeCoF.
