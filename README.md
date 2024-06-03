@@ -8,7 +8,7 @@ First, we propose a scalable dataset consisting of 964 prompts, covering various
 Second, we found via probing experiments that spatial artifact-based detectors lack generalizability. Hence, we propose a simple yet effective detection model based on frame consistency (DeCoF), which focuses on temporal artifacts by eliminating the impact of spatial artifacts during feature learning.
 
 <p align="center">
-<img src="pics/figure1.pdf" width=60%>
+<img src="pics/figure1.jpg" width=60%>
 </p>
 
 ## Overview
@@ -17,11 +17,11 @@ Second, we found via probing experiments that spatial artifact-based detectors l
 ## GeneratedVideoForensics (GVF) dataset.
 
 <p align="center">
-<img src="/pics/data_distribution.pdf" width=60%>
+<img src="/pics/data_distribution.png" width=60%>
 </p>
 
 ## DeCoF.
 
 <p align="center">
-<img src="/pics/model-1.pdf" width=100%>
+<img src="/pics/model-1.png" width=100%>
 </p>
