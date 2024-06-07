@@ -3,7 +3,7 @@
 ## News 🚀
 **[2024/1/31]**  Comming soon.    
 
-**[2024/6/7]**  The prompts used for generating videos, the attribute partitioning involved in prompts, and the partitioning of the dataset validation set, test set, and training set have been open-source. You can access it in the **datas** folder. Unfortunately, we are unable to directly provide real videos. You can download them from the original dataset based on the video_id of prompts.  
+**[2024/6/7]**  The prompts used for generating videos, the attribute partitioning involved in prompts, and the partitioning of the dataset validation set, test set, and training set have been open-source. You can access it in the `/datas/` folder. Unfortunately, we are unable to directly provide real videos. You can download them from the original dataset based on the video_id of prompts.  
 
 **[Before 2024/6/20]**  All generated videos will be open source. 
 
