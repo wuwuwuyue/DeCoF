@@ -1,5 +1,5 @@
 # DeCoF: Generated Video Detection via Frame Consistency
-![Overview](<img src="/pics/data_distribution.png" width=50%>)  
+![Overview](pics/model-1_1.png)  
 ## News 🚀
 **[2024/1/31]**  Comming soon.    
 
