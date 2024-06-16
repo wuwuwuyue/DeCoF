@@ -5,7 +5,7 @@
 
 **[2024/6/7]**  The prompts used for generating videos, the attribute partitioning involved in prompts, and the partitioning of the dataset validation set, test set, and training set have been open-source. You can access it in the `/datas/` folder. Unfortunately, we are unable to directly provide real videos. You can download them from the original dataset based on the video_id of prompts.  
 
-**[2024/6/16]**  All generated videos can be downloaded from [here](https://pan.baidu.com/s/1j725GWEB2lsGtuUy4Rvl3g?pwd=ptr8)(ptr8), The emergence speed of video generation models far exceeds our imagination. If you expand a subset based on our dataset, we sincerely invite you to release the corresponding generated videos.
+**[2024/6/16]**  All generated videos can be downloaded from [here] (https://pan.baidu.com/s/1j725GWEB2lsGtuUy4Rvl3g?pwd=ptr8) (ptr8), The emergence speed of video generation models far exceeds our imagination. If you expand a subset based on our dataset, we sincerely invite you to release the corresponding generated videos.
 
 
 ## Abstract
