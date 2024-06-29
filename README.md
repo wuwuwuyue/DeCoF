@@ -40,7 +40,7 @@ If you find our work useful for your research, please consider citing our paper:
 ```bibtex
 @article{ma2024decof,
   title={DeCoF: Generated Video Detection via Frame Consistency},
-  author={Ma, Long and Zhang, Jiajia and Deng, Hongping and Zhang, Ningyu and Liao, Yong and Yu, Haiyang},
+  author={Ma, Long and Zhang, Jiajia and Deng, Hongping and Zhang, Ningyu and Liao, Yong and Yu, Haiyang and Zhou, Pengyuan},
   journal={arXiv preprint arXiv:2402.02085},
   year={2024}
 }
