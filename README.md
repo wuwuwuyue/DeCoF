@@ -7,7 +7,7 @@
 
 **[2024/6/16]**  All generated videos can be downloaded from [here](https://pan.baidu.com/s/1j725GWEB2lsGtuUy4Rvl3g?pwd=ptr8) (**ptr8**), The emergence speed of video generation models far exceeds our imagination. If you expand a subset based on our dataset, we sincerely invite you to release the corresponding generated videos.
 
-**[2024/7.1]** Thanks to Kling[here](https://kling.kuaishou.com/). We have extended the Decof dataset based on the video generation model Kling, and the test dataset for Kling will be made public soon.
+**[2024/7.1]** Thanks to [Kling](https://kling.kuaishou.com/). We have extended the Decof dataset based on the video generation model Kling, and the test dataset for Kling will be made public soon.
 
 
 ## Abstract
