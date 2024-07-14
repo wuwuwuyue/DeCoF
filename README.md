@@ -20,6 +20,22 @@ Second, we found via probing experiments that spatial artifact-based detectors l
 <img src="pics/figure1_1.jpg" width=60%>
 </p>
 
+## Generated video detection
+**We hope that our work can assist future researchers. Here we showcase the work of other researchers in generated video detection.**
+* DeCoF: Generated Video Detection via Frame Consistency,  **2024.2**: [paper](https://arxiv.org/abs/2402.02085)
+
+   **method**
+   <p align="center">
+    <img src="/pics/model-1_1.png" width=80%>
+    </p>
+   
+* DeMamba: AI-Generated Video Detection on Million-Scale GenVideo Benchmark, **2024.5** [paper](https://arxiv.org/abs/2405.19707)
+  
+  **method**
+   <p align="center">
+     <img src="/pics/demam.png" width=80%>
+    </p>
+
 ## Overview
 - **[GeneratedVideoForensics (GVF) dataset.]**
 - **[DeCoF.]**
@@ -35,16 +51,6 @@ Second, we found via probing experiments that spatial artifact-based detectors l
 <img src="/pics/model-1_1.png" width=80%>
 </p>
 
-## Generated video detection
-**We hope that our work can assist future researchers. Here we showcase the work of other researchers in generated video detection.**
-* DeCoF: Generated Video Detection via Frame Consistency,  **2024.2**: [paper](https://arxiv.org/abs/2402.02085)
-
-   **method**
-   <p align="center">
-  <img src="/pics/model-1_1.png" width=80%>
-    </p>
-   
-* DeMamba: AI-Generated Video Detection on Million-Scale GenVideo Benchmark, **2024.5** [paper](https://arxiv.org/abs/2405.19707)
 # Citation
 If you find our work useful for your research, please consider citing our paper:
 ```bibtex
