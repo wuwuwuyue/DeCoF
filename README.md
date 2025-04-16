@@ -31,5 +31,32 @@ Extensive experiments demonstrate the generality and efficacy of the proposed De
 ## Code
 >we provide our model weights [here](https://drive.google.com/drive/folders/1X4Gw4hkWfka42IaBQ6ImkDTGAeA9Wlk4?usp=drive_link). The training code is in src.
 
-# Citation
+## Setup
+## 1. Dataset
+Download datasets and place them in `./data/` folder.  Extract frames from the first 32 frames of the video, evenly select 8 frames, crop the frames into squares at the center, and store them as follows. The files for dividing the training set, testing set, and validation set are stored in  `datas/split`.
+For example, download **Text2Video_Zero** and **Real**,:
+```
+.
+└── data
+    └── Text2Video_Zero
+        ├── Train 
+        ├── Val
+        ├── Test
+        │   └── 0_real
+        |       └── -_hbPLsZvvo_19_25
+        |           └── 000.jpg
+        |           └── 001.jpg
+        │   └── 1_fake
+        |       └── -_hbPLsZvvo_19_25
+        |           └── 000.jpg
+        |           └── 001.jpg    
+```
+## 2.Training
+    Run the training:
+    ```bash
+    CUDA_VISIBLE_DEVICES=* python3 src/train.py \
+    src/configs/base.json \
+    -n DeCoF
+    ```
+## Citation
 If you find our work useful for your research, please consider citing our paper
