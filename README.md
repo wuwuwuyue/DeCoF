@@ -2,6 +2,7 @@
 <div align="center">
     <a href='https://arxiv.org/abs/2402.02085'><img src='https://img.shields.io/badge/ArXiv-2402.02085-red'></a>
 </div>
+![Overview](overview.png)  
 
 ## News 🚀
 **[2025.4.16]** Our paper has been accepted by ICME 2025. 🎉🎉🎉 
