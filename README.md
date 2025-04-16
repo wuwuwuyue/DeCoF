@@ -12,9 +12,9 @@
 
 ## Abstract
 > The increasing realism of AI-generated videos has raised potential security concerns, making it difficult for humans to distinguish them from the naked eye. Despite these concerns, limited research has been dedicated to detecting such videos effectively.
-To this end, we propose an \textit{open-source AI-generated video detection dataset}. Our dataset spans diverse objects, scenes, behaviors, and actions by organizing input prompts into independent dimensions. 
+To this end, we propose an open-source AI-generated video detection dataset. Our dataset spans diverse objects, scenes, behaviors, and actions by organizing input prompts into independent dimensions. 
 It also includes various generation models with different generative models, featuring popular commercial models such as OpenAI's Sora, Google's Veo, and Kwai's Kling.
-Furthermore,  we propose a simple yet effective \textit{\underline{De}tection model} based on \underline{Co}ncistency of \underline{F}rame (DeCoF), which learns robust temporal artifacts across different generation methods.
+Furthermore,  we propose a simple yet effective **De**tection model based on **Co**ncistency of **F**rame (DeCoF), which learns robust temporal artifacts across different generation methods.
 Extensive experiments demonstrate the generality and efficacy of the proposed DeCoF in detecting AI-generated videos, including those from nowadays' mainstream commercial generators.
 
 <p align="center">
