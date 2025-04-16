@@ -71,3 +71,12 @@ pip install tqdm  einops  numpy sklearn pillow
     ```
 ## Citation
 If you find our work useful for your research, please consider citing our paper
+```bibtex
+@article{ma2024decof,
+  title={DeCoF: Generated Video Detection via Frame Consistency},
+  author={Ma, Long and Zhang, Jiajia and Deng, Hongping and Zhang, Ningyu and Liao, Yong and Yu, Haiyang},
+  journal={arXiv e-prints},
+  pages={arXiv--2402},
+  year={2024}
+}
+```
