@@ -3,10 +3,9 @@
     <a href='https://arxiv.org/abs/2402.02085'><img src='https://img.shields.io/badge/ArXiv-2402.02085-red'></a>
 </div>
 
-[Overview](pics/model-1_1.png)  
 ## News 🚀
 **[2025.4.16]** Our paper has been accepted by ICME 2025. 🎉🎉🎉 
-
+**[2025.4.16]** The training code and weights have been open-source.
 **[2024/6/7]**  The prompts used to generate videos, the attribute partitioning involved in prompts, and the partitioning of the dataset  have been open-source. You can access it in the `/datas/` folder. Unfortunately, we are unable to directly provide real videos. You can download them from the original dataset based on the video_id of prompts.  
 
 **[2024/6/16]**  All generated videos can be downloaded from [here](https://drive.google.com/drive/folders/1X4Gw4hkWfka42IaBQ6ImkDTGAeA9Wlk4?usp=drive_link), The emergence speed of video generation models far exceeds our imagination. If you expand a subset based on our dataset, we sincerely invite you to release the corresponding generated videos.
