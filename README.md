@@ -1,7 +1,10 @@
 # DeCoF: Generated Video Detection via Frame Consistency
+<div align="center">
+    <a href='https://arxiv.org/abs/2402.02085'><img src='https://img.shields.io/badge/ArXiv-2402.02085-red'></a>
+</div>
 ![Overview](pics/model-1_1.png)  
 ## News 🚀
-**[2024/1/31]**  Comming soon.    
+**[2025.4.16]** Our paper has been accepted by ICME 2025. 🎉🎉🎉 
 
 **[2024/6/7]**  The prompts used to generate videos, the attribute partitioning involved in prompts, and the partitioning of the dataset  have been open-source. You can access it in the `/datas/` folder. Unfortunately, we are unable to directly provide real videos. You can download them from the original dataset based on the video_id of prompts.  
 
@@ -20,6 +23,7 @@ Extensive experiments demonstrate the generality and efficacy of the proposed De
 <p align="center">
 <img src="pics/figure1_1.jpg" width=60%>
 </p>
-
+## Code
+>we provide our model weights[here](https://drive.google.com/drive/folders/1X4Gw4hkWfka42IaBQ6ImkDTGAeA9Wlk4?usp=drive_link). The training code is in src.
 # Citation
 If you find our work useful for your research, please consider citing our paper
