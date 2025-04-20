@@ -26,6 +26,7 @@ class Detector(nn.Module):
           
             y[i]=img
         x=self.net_all(y)
+        return x 
         
     def training_step(self,x,target):
         for i in range(2):
