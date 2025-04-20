@@ -15,13 +15,13 @@ class Dataset(Dataset):
 		print('1')
 		assert phase in ['train','val','test']
 		
-		folder_list_r,folder_list_f=init_ff(phase,data_name,n_frames=n_frames)
+		folder_list,label_list=init_ff(phase,data_name,n_frames=n_frames)
 		
-		print(f'SBI({phase}): {len(folder_list_r)}')
+		print(f'SBI({phase}): {len(folder_list)}')
 	
 
-		self.folder_list_r=folder_list_r
-		self.folder_list_f=folder_list_f
+		self.folder_list=folder_list
+		self.label_list=label_list
 		self.image_size=(image_size,image_size)
 		self.image_size_w=image_size
 		self.phase=phase
@@ -33,12 +33,12 @@ class Dataset(Dataset):
         
 
 	def __len__(self):
-		return len(self.folder_list_r)
+		return len(self.folder_list)
 
 	def __getitem__(self,idx):
 		data={}
-		label=torch.tensor(self.folder_list_f[idx])
-		images_temp_r=sorted(glob(self.folder_list_r[idx]+'/*.jpg'))
+		label=torch.tensor(self.label_list[idx])
+		images_temp_r=sorted(glob(self.folder_list[idx]+'/*.jpg'))
 		real_images=torch.zeros([self.n_frames,3,self.image_size_w,self.image_size_w],dtype=torch.float)
 		for idx_x in range(self.n_frames):
 			filename_r=images_temp_r[idx_x]
@@ -50,7 +50,7 @@ class Dataset(Dataset):
 			real_images[idx_x]=img_r
 			
 		
-		data['img']=real_images.permute(1,0,2,3)
+		data['img']=real_images
 		data['label']=label
 		return data
 			
