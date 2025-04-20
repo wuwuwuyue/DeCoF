@@ -8,7 +8,7 @@
 ## News 🚀
 **[2025.4.16]** Our paper has been accepted by ICME 2025. 🎉🎉🎉 
 
-**[2025.4.20]** In order to make the code more readable, we plan to spend some time organizing the code. However, many people have sent emails hoping to open source it as soon as possible, so we have compiled an open source code in a short period of time. However, it has not been verified and the code cannot run. Currently, the training code should have no problems. If there are any problems, please let us know directly. Please complete the testing code and data preprocessing by yourself.
+**[2025.4.20]** In order to make the code more readable, we plan to spend some time organizing the code. However, many people have sent emails hoping to open source it as soon as possible, so we have compiled an open source code in a short period of time. However, it has not been verified and the code cannot run. Currently, the training code should have no problems. If there are any problems, please let us know directly. 
 
 **[2025.4.16]** The training code and weights have been open-source.
 
