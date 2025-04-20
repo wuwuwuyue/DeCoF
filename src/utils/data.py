@@ -7,6 +7,10 @@ from PIL import Image
 import random
 import warnings
 from initialize import *
+from scipy.ndimage.filters import gaussian_filter
+import cv2
+from io import BytesIO
+from random import  choice
 warnings.filterwarnings('ignore')
 
 
@@ -53,7 +57,58 @@ class Dataset(Dataset):
 		data['img']=real_images
 		data['label']=label
 		return data
-			
+	def data_augment(self,img):
+		img = np.array(img)
+
+		if random.random() < 0.5:
+			sig = self.sample_continuous([0.0,3.0])
+			self.gaussian_blur(img, sig)
+
+		if random.random() < 0.5:
+			method = self.sample_discrete(['cv2','pil'])
+			qual = self.sample_discrete([30,100])
+			img = self.jpeg_from_key(img, qual, method)
+		return Image.fromarray(img)
+	def sample_discrete(self,s):
+		if len(s) == 1:
+			return s[0]
+		return choice(s)
+    
+	def cv2_jpg(self,img, compress_val):
+		img_cv2 = img[:,:,::-1]
+		encode_param = [int(cv2.IMWRITE_JPEG_QUALITY), compress_val]
+		result, encimg = cv2.imencode('.jpg', img_cv2, encode_param)
+		decimg = cv2.imdecode(encimg, 1)
+		return decimg[:,:,::-1]
+	
+	def gaussian_blur(self,img, sigma):
+		gaussian_filter(img[:,:,0], output=img[:,:,0], sigma=sigma)
+		gaussian_filter(img[:,:,1], output=img[:,:,1], sigma=sigma)
+		gaussian_filter(img[:,:,2], output=img[:,:,2], sigma=sigma)
+
+	def pil_jpg(self,img, compress_val):
+		out = BytesIO()
+		img = Image.fromarray(img)
+		img.save(out, format='jpeg', quality=compress_val)
+		img = Image.open(out)
+		# load from memory before ByteIO closes
+		img = np.array(img)
+		out.close()
+		return img
+
+
+	#jpeg_dict = {'cv2': cv2_jpg, 'pil': pil_jpg}
+	def jpeg_from_key(self,img, compress_val, key):
+		jpeg_dict = {'cv2': self.cv2_jpg, 'pil':self.pil_jpg}
+		method = jpeg_dict[key]
+		return method(img, compress_val)
+	def sample_continuous(self,s):
+		if len(s) == 1:
+			return s[0]
+		if len(s) == 2:
+			rg = s[1] - s[0]
+			return random.random() * rg + s[0]
+		raise ValueError("Length of iterable s should be 1 or 2.")	
 	def binary_dataset(self,phase):
 		if phase=='train':
 			crop_func = transforms.RandomCrop(224)
