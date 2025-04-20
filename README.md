@@ -59,7 +59,7 @@ For example, download **Text2Video_Zero** and **Real**,:
 3. Install the necessary libraries
 ```bash
 pip install torch torchvision
-pip install tqdm  einops  numpy sklearn pillow
+pip install tqdm  einops  numpy scikit-learn pillow
 
 ```
 ## Training
