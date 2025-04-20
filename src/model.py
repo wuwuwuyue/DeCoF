@@ -14,6 +14,8 @@ class Detector(nn.Module):
             p.requires_grad = False
 
         self.net_all=ViT()   
+        self.cel=nn.CrossEntropyLoss()
+        self.optimizer=SAM(self.net_all.parameters(),torch.optim.SGD,lr=0.001,momentum=0.9)
     def forward(self,x):
         y=torch.zeros(len(x),8,768).cuda()
         
