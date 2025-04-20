@@ -10,7 +10,7 @@
 
 **[2025.4.20]** In order to make the code more readable, we plan to spend some time organizing the code. However, many people have sent emails hoping to open source it as soon as possible, so we have compiled an open source code in a short period of time. However, it has not been verified and the code cannot run. Currently, the training code should have no problems. If there are any problems, please let us know directly. 
 
-**[2025.4.16]** The training code and weights have been open-source.
+**[2025.4.16]** The training code has been open-source.
 
 **[2024/6/7]**  The prompts used to generate videos, the attribute partitioning involved in prompts, and the partitioning of the dataset  have been open-source. You can access it in the `/datas/` folder. Unfortunately, we are unable to directly provide real videos. You can download them from the original dataset based on the video_id of prompts.  
 
@@ -31,7 +31,7 @@ Extensive experiments demonstrate the generality and efficacy of the proposed De
 </p>
 
 ## Code
->we provide our model weights [here](https://drive.google.com/drive/folders/1X4Gw4hkWfka42IaBQ6ImkDTGAeA9Wlk4?usp=drive_link). The training code is in src.
+> The training code is in src.
 
 ## Setup
 
