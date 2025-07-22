@@ -8,9 +8,6 @@
 ## News 🚀
 **[2025.4.16]** Our paper has been accepted by ICME 2025. 🎉🎉🎉 
 
-**[2025.4.20]** In order to make the code more readable, we plan to spend some time organizing the code. However, many people have sent emails hoping to open source it as soon as possible, so we have compiled an open source code in a short period of time. However, it has not been verified and the code cannot run. Currently, the training code should have no problems. If there are any problems, please let us know directly. 
-
-**[2025.4.16]** The training code has been open-source.
 
 **[2024/6/7]**  The prompts used to generate videos, the attribute partitioning involved in prompts, and the partitioning of the dataset  have been open-source. You can access it in the `/datas/` folder. Unfortunately, we are unable to directly provide real videos. You can download them from the original dataset based on the video_id of prompts.  
 
@@ -30,47 +27,7 @@ Extensive experiments demonstrate the generality and efficacy of the proposed De
 <img src="pics/figure1_1.jpg" width=60%>
 </p>
 
-## Code
-> The training code is in src.
 
-## Setup
-
-1. Clone this repository 
-```bash
-git clone https://github.com/wuwuwuyue/DeCoF
-cd DeCoF
-```
-2. Prepare the dataset
-Download datasets and place them in `./data/` folder.  Extract frames from the first 32 frames of the video, evenly select 8 frames, crop the frames into squares at the center, and store them as follows. The files for dividing the training set, testing set, and validation set are stored in  `datas/split`.
-For example, download **Text2Video_Zero** and **Real**,:
-```
-└── data
-    └── Text2Video_Zero
-        ├── Train 
-        ├── Val
-        ├── Test
-        │   └── 0_real
-        |       └── -_hbPLsZvvo_19_25
-        |           └── 000.jpg
-        |           └── 001.jpg
-        │   └── 1_fake
-        |       └── -_hbPLsZvvo_19_25
-        |           └── 000.jpg
-        |           └── 001.jpg    
-```
-3. Install the necessary libraries
-```bash
-pip install torch torchvision
-pip install tqdm  einops  numpy scikit-learn pillow ftfy regex  opencv-python  scipy  opencv-python
-
-```
-## Training
-    Run the training:
-    ```bash
-    CUDA_VISIBLE_DEVICES=* python3 src/train.py \
-    src/configs/base.json \
-    -n DeCoF
-    ```
 ## Citation
 If you find our work useful for your research, please consider citing our paper
 ```bibtex
