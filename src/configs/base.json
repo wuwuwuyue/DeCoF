@@ -1,8 +1,0 @@
-
-{
-    "epoch":5,
-    "batch_size":15,
-    "image_size":224,
-    "n_frames":8,
-    "subdatasets_name":"text2video_zero"
-}
