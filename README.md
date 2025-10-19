@@ -80,7 +80,7 @@ If you find our work useful for your research, please consider citing our paper
 ```bibtex
 @article{ma2024detecting,
   title={Detecting AI-Generated Video via Frame Consistency},
-  author={Ma, Long and Yan, Zhiyuan and Guo, Qinglang and Liao, Yong and Yu, Haiyang and Zhou, Pengyuan},
+  author={Long Ma and Zhiyuan Yan and Qinglang Guo and Yong Liao and Haiyang Yu and Pengyuan Zhou},
   journal={arXiv preprint arXiv:2402.02085},
   year={2024}
 }
