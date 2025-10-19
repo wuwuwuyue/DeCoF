@@ -26,8 +26,6 @@ Extensive experiments demonstrate the generality and efficacy of the proposed De
 <p align="center">
 <img src="pics/figure1_1.jpg" width=60%>
 </p>
-## Code
-> The training code is in src.
 
 ## Setup
 
