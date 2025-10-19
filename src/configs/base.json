@@ -1,0 +1,8 @@
+
+{
+    "epoch":5,
+    "batch_size":32,
+    "image_size":224,
+    "n_frames":8,
+    "subdatasets_name":""
+}
