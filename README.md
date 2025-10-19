@@ -26,18 +26,66 @@ Extensive experiments demonstrate the generality and efficacy of the proposed De
 <p align="center">
 <img src="pics/figure1_1.jpg" width=60%>
 </p>
+## Code
+> The training code is in src.
 
+## Setup
+
+1. Clone this repository 
+```bash
+git clone https://github.com/wuwuwuyue/DeCoF
+cd DeCoF
+```
+2. Prepare the dataset
+Download datasets and place them in `./data/` folder.  Extract frames from the first 32 frames of the video, evenly select 8 frames, crop the frames into squares at the center, and store them as follows. The files for dividing the training set, testing set, and validation set are stored in  `datas/split`.
+For example, download **Text2Video_Zero** and **Real**,:
+```
+└── data
+    └── Text2Video_Zero
+        ├── Train 
+        ├── Val
+        ├── Test
+        │   └── 0_real
+        |       └── -_hbPLsZvvo_19_25
+        |           └── 000.jpg
+        |           └── 001.jpg
+        │   └── 1_fake
+        |       └── -_hbPLsZvvo_19_25
+        |           └── 000.jpg
+        |           └── 001.jpg    
+```
+3. Install the necessary libraries
+```bash
+pip install torch torchvision
+pip install tqdm  einops  numpy scikit-learn pillow ftfy regex  opencv-python  scipy  opencv-python
+```
+
+## Train
+Modify `subdatasets_name`  to the name of the sub dataset used in the `src/configs/base.json`.
+
+Change the `root`  in the `src/utils/initialize.py` to your dataset path.
+```bash
+CUDA_VISIBLE_DEVICES=* python3 src/train.py \
+src/configs/base.json \
+-n DeCoF
+    
+```
+## Test
+Change the `load_file`  in the `src/test.py` to your checkpoint path.
+```bash
+CUDA_VISIBLE_DEVICES=* python3 src/test.py \
+src/configs/base.json \
+-n DeCoF
+
+```
 
 ## Citation
 If you find our work useful for your research, please consider citing our paper
 ```bibtex
-@article{ma2024decof,
-  title={DeCoF: Generated Video Detection via Frame Consistency},
-  author={Ma, Long and Zhang, Jiajia and Deng, Hongping and Zhang, Ningyu and Liao, Yong and Yu, Haiyang},
-  journal={arXiv e-prints},
-  pages={arXiv--2402},
+@article{ma2024detecting,
+  title={Detecting AI-Generated Video via Frame Consistency},
+  author={Ma, Long and Yan, Zhiyuan and Guo, Qinglang and Liao, Yong and Yu, Haiyang and Zhou, Pengyuan},
+  journal={arXiv preprint arXiv:2402.02085},
   year={2024}
 }
 ```
-## 📧 Contact
-If you have any questions, please contact us: longm@mail.ustc.edu.cn.
