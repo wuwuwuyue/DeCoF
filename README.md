@@ -6,8 +6,6 @@
 ![Overview](pics/model-1_1.png)  
 
 ## News 🚀
-**[2025.4.16]** Our paper has been accepted by ICME 2025. 🎉🎉🎉 
-
 
 **[2024/6/7]**  The prompts used to generate videos, the attribute partitioning involved in prompts, and the partitioning of the dataset  have been open-source. You can access it in the `/datas/` folder. Unfortunately, we are unable to directly provide real videos. You can download them from the original dataset based on the video_id of prompts.  
 
